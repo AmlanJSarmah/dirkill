@@ -1,5 +1,6 @@
 import os
 import platform
+import shutil
 
 def traverse_file_system(path,folder_name):
 	platform_sys = platform.system()
@@ -14,3 +15,10 @@ def traverse_file_system(path,folder_name):
 		return directories
 	except:
 		return []
+
+def delete_folders(list):
+	for value in list:
+		try:
+			shutil.rmtree(value)
+		except:
+			pass

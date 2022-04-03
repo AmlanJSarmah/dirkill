@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
-import os
 from utils import traverse_file_system
+from utils import delete_folders
 
 # Path and folder name
 path = ''
@@ -29,7 +29,7 @@ while True:
 		break
 
 	if event == '-STORE-':
-		# Gathers our path and folder name
+		# Gathers our path and folder name and finds the necessary folders to be shown in the list .
 		if values['-PATH-'] and values['-FOLDER-'] != '':
 			path = values['-PATH-']
 			folder = values['-FOLDER-']
@@ -38,8 +38,11 @@ while True:
 
 
 	if event == '-DELETE-':
-		if values['-SELECT-'] != []:
-			print("Hi for now")
-
+		if values['-SELECT-'] == []:
+			pass
+		else:
+			delete_folders(values['-SELECT-'])
+			select_list = traverse_file_system(path,folder)
+			window['-SELECT-'].Update(values=select_list)
 
 window.close()
