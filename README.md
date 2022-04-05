@@ -22,7 +22,7 @@ For Mac or Linux
 ![Screenshot (12)](https://user-images.githubusercontent.com/99042379/161427044-4abb5808-cbff-44cd-8c78-43830b06b2ce.png)
 
 ### Installation
-The process of installation is very simple just install clone the project files navigate to the location where the directory is stored and go to the **src** folder and execute **dirkill.py** by typing.
+The process of installation is very simple just install or clone the project files navigate to the location where the directory is stored and go to the **src** folder and execute **dirkill.py** by typing.
  
 For Windows
 
@@ -30,3 +30,5 @@ For Windows
 
 For Mac and Linux
   > python3 dirkill.py
+
+PS : **PySimpleGUI** must be installed.
