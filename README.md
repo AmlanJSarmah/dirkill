@@ -8,7 +8,7 @@ Not only JS devs but other devs too download heavy libraries in various places o
 
 ### Dependencies
 
-The application is coded with python and PySimpleGUI is used as a dependecy .
+The application is coded with python and PySimpleGUI version 4.57.0 is used as a dependecy .
 
 To install PySimpleGUI in Windows
 
